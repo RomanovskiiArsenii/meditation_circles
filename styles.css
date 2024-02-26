@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(24, 24, 24);
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#circle1 {
+    animation: moveLeft 10s ease alternate infinite;
+}
+
+#circle2 {
+    animation: moveRight 10s ease alternate infinite;
+}
+
+@keyframes moveRight {
+    to {
+        transform: translate(-10%, -50%);
+    }
+}
+
+@keyframes moveLeft {
+    to {
+        transform: translate(-90%, -50%);
+    }
+}
